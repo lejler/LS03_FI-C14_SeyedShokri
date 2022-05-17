@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="de.oszimt.ls.aliendefence.view.menue.LevelChoice">
+  <grid id="27dc6" binding="panel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="6dda1" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints border-constraint="South"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="c85bc" class="javax.swing.JButton" binding="btnNewLevel">
+            <constraints/>
+            <properties>
+              <text value="Neues Level"/>
+            </properties>
+          </component>
+          <component id="9382c" class="javax.swing.JButton" binding="btnUpdateLevel">
+            <constraints/>
+            <properties>
+              <text value="Ausgewähltes Level bearbeiten"/>
+            </properties>
+          </component>
+          <component id="5f096" class="javax.swing.JButton" binding="btnDeleteLevel">
+            <constraints/>
+            <properties>
+              <text value="Level löschen"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="fc00" class="javax.swing.JLabel">
+        <constraints border-constraint="North"/>
+        <properties>
+          <font size="18" style="1"/>
+          <horizontalAlignment value="0"/>
+          <text value="Levelauswahl"/>
+        </properties>
+      </component>
+      <scrollpane id="231d4">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="28513" class="javax.swing.JTable" binding="tblLevels">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+</form>
