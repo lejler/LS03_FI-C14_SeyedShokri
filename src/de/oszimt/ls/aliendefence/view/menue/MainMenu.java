@@ -15,7 +15,6 @@ public class MainMenu {
 
     private JPanel main;
     private JTextField loginTextField;
-    private JComboBox level;
     private JButton playButton;
     private JButton testButton;
     private JButton highscoreButton;
@@ -28,8 +27,7 @@ public class MainMenu {
         //fill level chooser
         // Levelliste für die ComboBox abrufen
         List<Level> arrLevel = alienDefenceController.getLevelController().readAllLevels();
-        String[] arrLevelNames = getLevelNames(arrLevel);
-        level.setModel(new DefaultComboBoxModel<String>(arrLevelNames));
+
 
         // Button Spielen - ActionListener
         playButton.addActionListener(new ActionListener() {
@@ -45,8 +43,8 @@ public class MainMenu {
                         @Override
                         public void run() {
 
-                            GameController gameController = alienDefenceController.startGame(arrLevel.get(level.getSelectedIndex()), user);
-                            new GameGUI(gameController).start();
+                            //GameController gameController = alienDefenceController.startGame(arrLevel.get(level.getSelectedIndex()), user);
+                            //new GameGUI(gameController).start();
                         }
                     };
                     t.start();
@@ -69,8 +67,7 @@ public class MainMenu {
 
                     @Override
                     public void run() {
-                        GameController gameController = alienDefenceController.startGame(arrLevel.get(level.getSelectedIndex()), user);
-                        new GameGUI(gameController).start();
+                        new LeveldesignWindow(alienDefenceController, user, "Testen");
                     }
                 };
                 t.start();
@@ -81,7 +78,7 @@ public class MainMenu {
         highscoreButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new Highscore(alienDefenceController.getAttemptController(), arrLevel.get(level.getSelectedIndex()));
+                new Highscore(alienDefenceController.getAttemptController(), arrLevel.get(1));
             }
         });
 
@@ -89,7 +86,7 @@ public class MainMenu {
         levelEditorButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new LeveldesignWindow(alienDefenceController);
+                new LeveldesignWindow(alienDefenceController, null, "Leveleditor");
             }
         });
 
