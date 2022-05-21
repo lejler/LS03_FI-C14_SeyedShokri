@@ -78,7 +78,8 @@ public class MainMenu {
         highscoreButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                new Highscore(alienDefenceController.getAttemptController(), arrLevel.get(1));
+                new LeveldesignWindow(alienDefenceController, null, "Highscore");
+                //new Highscore(alienDefenceController.getAttemptController(), arrLevel.get(1));
             }
         });
 
