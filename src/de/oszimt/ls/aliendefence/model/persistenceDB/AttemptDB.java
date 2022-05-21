@@ -14,7 +14,7 @@ import java.util.Vector;
 import de.oszimt.ls.aliendefence.model.Attempt;
 import de.oszimt.ls.aliendefence.model.Level;
 import de.oszimt.ls.aliendefence.model.persistence.IAttemptPersistance;
-import de.oszimt.ls.aliendefence.toDo.User;
+import de.oszimt.ls.aliendefence.model.User;
 
 public class AttemptDB implements IAttemptPersistance {
 

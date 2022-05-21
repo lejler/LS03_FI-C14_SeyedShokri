@@ -3,7 +3,7 @@ package de.oszimt.ls.aliendefence.view.menue;
 import de.oszimt.ls.aliendefence.controller.AlienDefenceController;
 import de.oszimt.ls.aliendefence.controller.GameController;
 import de.oszimt.ls.aliendefence.model.Level;
-import de.oszimt.ls.aliendefence.toDo.User;
+import de.oszimt.ls.aliendefence.model.User;
 import de.oszimt.ls.aliendefence.view.game.GameGUI;
 
 import javax.swing.*;

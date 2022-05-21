@@ -6,7 +6,7 @@ import java.util.List;
 import de.oszimt.ls.aliendefence.model.Level;
 import de.oszimt.ls.aliendefence.model.Point;
 import de.oszimt.ls.aliendefence.model.Target;
-import de.oszimt.ls.aliendefence.toDo.User;
+import de.oszimt.ls.aliendefence.model.User;
 import de.oszimt.ls.aliendefence.view.menue.Highscore;
 
 public class GameController {

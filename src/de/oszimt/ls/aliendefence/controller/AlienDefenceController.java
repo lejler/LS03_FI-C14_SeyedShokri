@@ -2,7 +2,7 @@ package de.oszimt.ls.aliendefence.controller;
 
 import de.oszimt.ls.aliendefence.model.Level;
 import de.oszimt.ls.aliendefence.model.persistence.IPersistance;
-import de.oszimt.ls.aliendefence.toDo.User;
+import de.oszimt.ls.aliendefence.model.User;
 
 public class AlienDefenceController {
 	

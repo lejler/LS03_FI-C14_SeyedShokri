@@ -1,4 +1,4 @@
-package de.oszimt.ls.aliendefence.toDo;
+package de.oszimt.ls.aliendefence.model;
 
 import java.time.LocalDate;
 

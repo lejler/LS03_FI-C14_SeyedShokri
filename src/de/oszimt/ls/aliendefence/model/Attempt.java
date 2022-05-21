@@ -3,8 +3,6 @@ package de.oszimt.ls.aliendefence.model;
 import java.time.LocalDateTime;
 import java.util.Vector;
 
-import de.oszimt.ls.aliendefence.toDo.User;
-
 public class Attempt {
 
 	// Attribute

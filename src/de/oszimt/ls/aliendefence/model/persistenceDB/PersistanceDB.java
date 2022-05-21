@@ -5,7 +5,6 @@ import de.oszimt.ls.aliendefence.model.persistence.ILevelPersistance;
 import de.oszimt.ls.aliendefence.model.persistence.IPersistance;
 import de.oszimt.ls.aliendefence.model.persistence.ITargetPersistance;
 import de.oszimt.ls.aliendefence.model.persistence.IUserPersistance;
-import de.oszimt.ls.aliendefence.toDo.UserDB;
 
 public class PersistanceDB implements IPersistance{
 
