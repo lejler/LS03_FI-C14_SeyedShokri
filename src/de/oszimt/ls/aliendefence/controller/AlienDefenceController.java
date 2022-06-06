@@ -11,7 +11,7 @@ public class AlienDefenceController {
 	private LevelController levelController;
 	private TargetController targetController;
 	private AttemptController attemptController;
-	//TODO UserController implementieren
+	private UserController userController;
 	
 	//Persistenz
 	private IPersistance alienDefenceModel;
@@ -22,6 +22,7 @@ public class AlienDefenceController {
 		this.attemptController = new AttemptController(alienDefenceModel);
 		this.levelController = new LevelController(alienDefenceModel);
 		this.targetController = new TargetController(alienDefenceModel);
+		this.userController = new UserController(alienDefenceModel.getUserPersistance());
 	}
 
 	public IPersistance getAlienDefenceModel() {
@@ -39,11 +40,11 @@ public class AlienDefenceController {
 	public TargetController getTargetController() {
 		return targetController;
 	}
+	public GameController getGameController() { return gameController; }
 
 	public GameController startGame(Level selectedLevel, User user) {
 		this.gameController = new GameController(selectedLevel, user, this);
 		return this.gameController;
 	}
 
-	
 }
