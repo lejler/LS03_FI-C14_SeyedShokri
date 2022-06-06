@@ -163,7 +163,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 INSERT INTO `users` (`P_user_id`, `first_name`, `sur_name`, `birthday`, `street`, `house_number`, `postal_code`, `city`, `login_name`, `password`, `salary_expectations`, `marital_status`, `final_grade`) VALUES
 (1, 'Mike', 'Leveltester', '2000-10-25', 'Testweg', '1', '10245', 'Berlin', 'test', 'pass', 36000, 'Roboter', '1.00'),
 (2, 'MC', 'A', '1998-02-03', 'Brooklynstreet', '2', '10113', 'NYC', 'user', 'pass', 100000, 'ledig', '2.40'),
-(3, 'Susanne', 'König', '2001-12-25', 'Hasenweg', '4', '08900', 'Bretnig-Hauswalde', 'susi', 'pass', 20000, 'verheirate', '2.90'),
+(3, 'Susanne', 'Kï¿½nig', '2001-12-25', 'Hasenweg', '4', '08900', 'Bretnig-Hauswalde', 'susi', 'pass', 20000, 'verheirate', '2.90'),
 (4, 'Jan', 'Jonas', '2004-02-29', 'Galihag', '111C', '10317', 'Berlin', 'jan', 'pass', 44444, 'ledig', '1.00'),
 (5, 'Felix', 'DelSande', '1985-04-01', 'Lerchenweg', '23', '10245', 'Berlin', 'felix', 'pass', 36000, 'ledig', '3.70');
 
